@@ -1,6 +1,7 @@
 <template>
 <header class="site-header">
     <div class="site-identity">
+      <img src="../assets/logo.png" class="site-logo">
       <h1><a href="#">GadgetsOneMalayalam</a></h1>
     </div>  
     <nav class="site-navigation">
@@ -25,6 +26,13 @@ export default {
     justify-content: space-between;
   }
   
+  .site-logo {
+    width: 45px;
+    vertical-align: middle;
+    padding-right: 15px;
+    margin-bottom: 10px;
+  }
+
   .site-identity h1 {
     font-size: 1.5em;
     margin: .6em 0;
