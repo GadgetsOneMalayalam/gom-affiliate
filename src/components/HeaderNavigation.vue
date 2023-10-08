@@ -26,7 +26,7 @@ export default {
     justify-content: space-between;
   }
   
-  .site-logo {
+  .site-identity .site-logo {
     width: 45px;
     vertical-align: middle;
     padding-right: 15px;
