@@ -1,4 +1,4 @@
-# gom-affiliate
+# Gom Affiliate Website.
 
 ## Project setup
 ```
