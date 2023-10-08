@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderNavigation/>
+    <AffiliateLinks/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AffiliateLinks from './components/AffiliateLinks.vue'
+import HeaderNavigation from './components/HeaderNavigation.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AffiliateLinks,
+    HeaderNavigation
   }
 }
 </script>
@@ -23,6 +24,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: auto;
+  max-width: 95vw;
+  @media only screen and (min-width: 991px) {
+    max-width: 80vw;
+  }
 }
 </style>
