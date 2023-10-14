@@ -60,7 +60,7 @@ mounted() {
     )
     .then((response) => {
         const data = response.data.split("\n");
-        this.affiliateLinks = data.slice(1).map((row, index) => {
+        const affiliateLinks = data.slice(1).map((row, index) => {
         const rowData = row.split(",");      // Remove quotes around values (if any)
         const cleanedRowData = rowData.map((value) => {
             if (value.startsWith('"') && value.endsWith('"')) {
@@ -81,6 +81,8 @@ mounted() {
             youtubeVideo: cleanedRowData[5],
         };
         });
+        this.affiliateLinks = affiliateLinks.reverse()
+
     })
     .catch((error) => {
         console.error("Error fetching data:", error);
